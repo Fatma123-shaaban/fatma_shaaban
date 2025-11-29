@@ -10,9 +10,12 @@ jobs:
       - name: "Testing GitHub"
         run: echo "Hello from GitHub Actions"
 
-      - uses: action/checkout@v3
+      - name: 'printing folder contents_before'
+        run: ls
 
-      - name: 'printing folder contents'
+      - uses: actions/checkout@v3
+
+      - name: 'printing folder contents_after'
         run: ls
    
 

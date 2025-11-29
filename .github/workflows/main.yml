@@ -1,1 +1,18 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v3
+      - name: "Testing GitHub"
+        run: echo "Hello from GitHub Actions"
+      # - name: "login docker hub"
+      #   run: docker login --username ${{secrets.docker.user}} --password ${{}}
+      # - name: "build image"
+      #   run: docker build -t 
+
 

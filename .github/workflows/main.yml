@@ -11,7 +11,7 @@ jobs:
       - name: "Testing GitHub"
         run: echo "Hello from GitHub Actions"
       # - name: "login docker hub"
-      #   run: docker login --username ${{secrets.docker.user}} --password ${{}}
+      #   run: docker login --username 
       # - name: "build image"
       #   run: docker build -t 
 

@@ -17,6 +17,9 @@ jobs:
 
       - name: 'printing folder contents_after'
         run: ls -a
+      
+      - name: "login to docker hub"
+        run: docker login --username ${{ secrets.USER_NAME }} --password ${{ secrets.TOKEN }}
    
 
 

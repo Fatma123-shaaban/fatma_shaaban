@@ -11,13 +11,9 @@ jobs:
         run: echo "Hello from GitHub Actions"
 
       - uses: action/checkout@v3
-      
+
       - name: 'printing folder contents'
         run: ls
-      
-      # - name: "login docker hub"
-      #   run: docker login --username 
-      # - name: "build image"
-      #   run: docker build -t 
+   
 
 
